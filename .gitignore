@@ -1,0 +1,11 @@
+node_modules/
+frontend/dist/
+backend/.env
+backend/data/
+backend/uploads/
+.env
+**/.env
+.DS_Store
+*.zip
+*.pem
+*.key

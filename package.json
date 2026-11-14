@@ -1,0 +1,12 @@
+{
+  "name": "streampulse",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run worker:dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend",
+    "start": "concurrently --kill-others-on-fail \"npm run start --prefix backend\" \"npm run worker --prefix backend\""
+  },
+  "dependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
